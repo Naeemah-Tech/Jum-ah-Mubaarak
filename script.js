@@ -26,6 +26,7 @@ audio.addEventListener('ended', () => {
     currentTimeEl.innerText = '0:00';
     progressBar.style.width = '0%';
     cardElement.classList.remove('is-playing');
+    cardElement.classList.add('jumah-mubarak-card');
 })
 
 function togglePlay() {
