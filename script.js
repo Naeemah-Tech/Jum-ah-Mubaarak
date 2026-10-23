@@ -114,7 +114,7 @@ function loadRandomQuote() {
 }
 loadRandomQuote();
 
-const LIVE_URL = 'https://cwn-jumah-mubaarak.vercel.app/';
+const LIVE_URL = 'https://cwnjumahmubaarak.vercel.app/';
 
 shareBtn.addEventListener('click', async () => {
     if (navigator.share) {
