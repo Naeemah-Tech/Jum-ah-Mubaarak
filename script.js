@@ -114,20 +114,25 @@ function loadRandomQuote() {
 }
 loadRandomQuote();
 
+const LIVE_URL = 'https://cwn-jumah-mubaarak.vercel.app/';
+
 shareBtn.addEventListener('click', async () => {
     if (navigator.share) {
         try {
             await navigator.share({
                 title: 'Jumu\'ah Mubarak',
                 text: 'Listen to this peaceful recitation for Jumu\'ah Mubarak!',
-                url: window.location.href,
+                url: LIVE_URL,
             });
         } catch (err) {
             console.log('Share canceled', err);
         }
     } else {
-        // Fallback for browsers that don't support native share
-        navigator.clipboard.writeText(window.location.href);
-        alert('Card link copied to clipboard!');
+        try {
+            await navigator.clipboard.writeText(LIVE_URL);
+            alert('Card link copied to clipboard!');
+        } catch (err) {
+            console.error('Copy failed', err);
+        }
     }
 });
