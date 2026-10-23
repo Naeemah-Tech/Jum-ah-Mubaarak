@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jum'ah Mubaarak</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+
+    <body>
+        <div id="card" class="jumah-mubarak-card">
+            <div class="card-content">
+                
+                <div class="header-section">
+                    <div class="naeemah-codes-logo-traced-circle">
+                        <div class="naeemah-codes-logo-circle"></div>
+                    </div>
+                    <div class="naeemah-codes-watermark">
+                        <p>@naeemah_codes</p>
+                    </div>
+                </div>
+
+                <div class="jummah-mubarak-greetings-box">
+                    <h3 class="greetings-title">Jumu'ah Mubarak</h3>
+                    <p class="greetings-dua">Peace, mercy, and blessings upon you</p>
+                </div>
+
+                <div class="reflect-and-dua">
+                    <div class="qur-an-reflect">
+                        <h3 class="reflect-and-dua-title">Qur'an Reflection</h3>
+                        <blockquote>
+                            <span class="arabic-text">
+                                يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا نُودِيَ لِلصَّلَاةِ مِنْ يَوْمِ الْجُمُعَةِ فَاسْعَوْا إِلَىٰ ذِكْرِ اللَّهِ وَذَرُوا الْبَيْعَ ۚ ذَٰلِكُمْ خَيْرٌ لَّكُمْ إِن كُنتُمْ تَعْلَمُونَ
+                            </span>
+
+                            <div class="styled-audio">
+                                <audio id="audio-player" src="assets/audio/surah-al-jumah-verse-9.mp3" preload="metadata"></audio>
+
+                                <i id="play-btn" class="fa-solid fa-circle-play audio-icon"></i>
+
+                                <span id="current-time" class="audio-time">0:00</span>
+                                
+                                <div id="progress-container" class="audio-progress-container">
+                                    <div id="progress-bar" class="audio-progress"></div>
+                                </div>
+                                
+                                <span id="duration" class="audio-duration"></span>
+                                
+                                <div class="volume-container">
+                                    <i id="volume-btn" class="fa-solid fa-volume-high audio-icon"></i>
+                                    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+                                </div>
+                            </div>
+                            
+                            <span class="translation">
+                                "O believers! When the call is made for prayer on Fridays, hasten to the remembrance of Allah and leave off business. That is better for you, if you only knew."
+                            </span>
+                        </blockquote>
+                        <cite>Surah Al-Jumu'ah (62:9)</cite>
+                    </div>
+
+                    <div class="traced-line"></div>
+
+                    <div class="dua">
+                        <h3 class="reflect-and-dua-title">Du'a</h3>
+                        <blockquote>
+                            <span class="arabic-text">
+                                اللهم اجعل هذا اليوم بركةً ونورًا ورحمةً لنا
+                            </span>
+                            <span class="translation">
+                                "O Allah, make this day a source of blessing, light and mercy for us."
+                            </span>
+                        </blockquote>
+                    </div>
+
+                    <div class="traced-line"></div>
+                
+                    <div id="quote-container" class="quote-box">
+                        <h3 class="reflect-and-dua-title">Quote of the Day</h3>
+                        <p id="quote-text">"Whoever reads Surah Al-Kahf on the day of Jumu'ah..."</p>
+                    </div>
+                </div>
+
+                <div class="social-media-buttons">
+                    <div class="tiktok-btn media-btn">
+                        <a href="https://www.tiktok.com/@naeemah_tech" target="_blank" aria-label="TikTok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                    <div class="instagram-btn media-btn">
+                        <a href="https://www.instagram.com/anebira_dev/" target="_blank" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="linkedin-btn media-btn">
+                        <a href="https://www.linkedin.com/in/naeemah-uthman-066720406/" target="_blank" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+
+                    <button id="share-btn" class="share-btn">
+                        <i class="fa-solid fa-share-nodes"></i> Share Card
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
